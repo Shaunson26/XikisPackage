@@ -25,18 +25,18 @@ The goal of XikisPackage is to ...
 You can install the development version of XikisPackage like so:
 
 ``` r
-# FILL THIS IN! HOW CAN PEOPLE INSTALL YOUR DEV PACKAGE?
+remotes::install_github(repo = 'Shaunson26/XikisPackage')
 ```
 
 ## Functions
 
 ```{r load-library}
-#library(XikisPackage)
+library(XikisPackage)
 ```
 
 ### Split data into columns
 
-```{r, eval=F}
+```{r split_column}
 tmp <- data.frame(cat = c('ABC', 'BCA', 'CAB', '', 'AXC', '12345', NA, '1'))
 
 split_column(tmp$cat, split = 'A')
